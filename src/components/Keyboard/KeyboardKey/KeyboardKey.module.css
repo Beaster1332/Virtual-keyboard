@@ -1,0 +1,12 @@
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 60px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}

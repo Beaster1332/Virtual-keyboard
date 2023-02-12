@@ -4,7 +4,9 @@ import classes from "./App.module.css";
 
 const App = () => {
     return <div className={classes.appContainer}>
-        <KeyboardContainer />
+        <div className={classes.keyboardContainer}>
+            <KeyboardContainer />
+        </div>
     </div>;
 };
 

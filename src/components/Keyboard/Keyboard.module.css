@@ -1,6 +1,37 @@
 .keyboardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     max-width: 100%;
     max-height: 500px;
     padding: 25px 30px;
     border: 1px solid black;
+}
+
+.changeLangBtn {
+    max-width: 165px;
+    height: 60px;
+    margin: 5px;
+    padding: 7px 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: all ease 0.45s;
+}
+
+.changeLangBtn:hover {
+    background-color: blue;
+    color: white;
+    border: none;
+    transform: scale(1.05);
+}
+
+.changeLangBtn:active {
+    background-color: rgb(0, 0, 126);
+    color: white;
+    border: none;
+    transform: scale(1);
 }
