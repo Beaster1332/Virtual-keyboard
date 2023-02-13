@@ -4,9 +4,9 @@ import classes from './KeyboardKey.module.css';
 
 const KeyboardKey: React.FC<KeyProps> = (props) => {
 
-    const { nameK } = props;
+    const { nameK, enterKey } = props;
 
-    return <div className={classes.key}>
+    return <div onClick={() => enterKey(nameK)} className={classes.key}>
         {nameK}
     </div>
 }

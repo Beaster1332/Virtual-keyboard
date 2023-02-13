@@ -9,4 +9,19 @@
     border-radius: 5px;
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.key:hover {
+    border: none;
+    background-color: blue;
+    color: white;
+    transform: scale(1.05);
+}
+
+.key:active {
+    color: white;
+    border: none;
+    transform: scale(1);
 }
