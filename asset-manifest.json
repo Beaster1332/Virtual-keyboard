@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Virtual-keyboard/static/css/main.afb35996.css",
+    "main.js": "/Virtual-keyboard/static/js/main.10ac9d51.js",
+    "index.html": "/Virtual-keyboard/index.html",
+    "main.afb35996.css.map": "/Virtual-keyboard/static/css/main.afb35996.css.map",
+    "main.10ac9d51.js.map": "/Virtual-keyboard/static/js/main.10ac9d51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afb35996.css",
+    "static/js/main.10ac9d51.js"
+  ]
+}
