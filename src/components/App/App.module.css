@@ -2,12 +2,41 @@
     width: 1200px;
     height: 100vh;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 }
 
-.keyboardContainer {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .appContainer {
+        width: 980px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 979px) {
+    .appContainer {
+        width: 769px;    
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .appContainer {
+        width: 640px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 639px) {
+    .appContainer {
+        width: 430px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 429px) {
+    .appContainer {
+        width: 360px;
+        padding: 0 15px;
+    }
 }

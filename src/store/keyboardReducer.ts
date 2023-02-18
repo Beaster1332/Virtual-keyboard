@@ -28,7 +28,6 @@ const keyboardReducer = (state: InitialState = initialState, action: Action): In
         case KeyboardTypeActions.BACKSPACE_CLICK:
 
             let str = state.textInput;
-
             return {
                 ...state,
                 textInput: str.slice(0, -1),

@@ -3,7 +3,7 @@ import KeyboardKey from './KeyboardKey/KeyboardKey';
 import { KeyboardProps } from '../../store/types/types';
 import classes from './Keyboard.module.css';
 
-const Keyboard: React.FC<KeyboardProps> = (props) => {
+const Keyboard = (props: KeyboardProps) => {
 
     const {
         textInput,
@@ -28,12 +28,14 @@ const Keyboard: React.FC<KeyboardProps> = (props) => {
             {ruKeyboard ?
                 ruKeysItems :
                 engKeysItems}
-            <button className={classes.changeLangBtn} onClick={() => backSpaceClick()}>Backspace</button>
+            <button className={classes.blueBorderButton} onClick={() => backSpaceClick()}>Backspace</button>
         </div>
-        <div>
+        <div className={classes.bottomButtonsContainer}>
             <div onClick={() => spaceClick()} className={classes.spaceBtn}></div>
-            <button className={classes.changeLangBtn} onClick={() => changeLanguage()}>Сменить язык</button>
-            <button className={classes.changeLangBtn} onClick={() => clearTextInput()}>Очистить</button>
+            <div className={classes.blueBorderButtonContainer}>
+                <button className={classes.blueBorderButton} onClick={() => changeLanguage()}>Сменить язык</button>
+                <button className={classes.blueBorderButton} onClick={() => clearTextInput()}>Очистить</button>
+            </div>
         </div>
     </div>
 }

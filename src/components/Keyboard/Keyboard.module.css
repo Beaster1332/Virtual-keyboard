@@ -31,7 +31,7 @@
     flex-wrap: wrap;
 }
 
-.changeLangBtn {
+.blueBorderButton {
     max-width: 165px;
     height: 60px;
     margin: 5px;
@@ -44,24 +44,28 @@
     transition: all ease 0.45s;
 }
 
-.changeLangBtn:hover {
+.blueBorderButton:hover {
     background-color: blue;
     color: white;
     border: none;
     transform: scale(1.05);
 }
 
-.changeLangBtn:active {
+.blueBorderButton:active {
     background-color: rgb(0, 0, 126);
     color: white;
     border: none;
     transform: scale(1);
 }
 
-.spaceBtn {
+.bottomButtonsContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.spaceBtn {
     width: 400px;
     height: 60px;
     margin-top: 15px;
@@ -80,4 +84,152 @@
 
 .spaceBtn:active {
     transform: scale(1);
+}
+
+.blueBorderButtonContainer {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .keyboardContainer {
+        padding: 20px 25px;
+    }
+
+    .blueBorderButton {
+        height: 50px;
+    }
+
+    .bottomButtonsContainer {
+        max-width: 500px;
+    }
+
+    .spaceBtn {
+        width: 400px;
+        height: 50px;
+        margin-top: 15px;
+    }
+
+    .blueBorderButtonContainer {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 979px) {
+    .keyboardContainer {
+        padding: 18px 23px;
+    }
+
+    .textInputContainer {
+        margin-bottom: 23px;
+    }
+
+    .blueBorderButton {
+        height: 45px;
+    }
+
+    .bottomButtonsContainer {
+        max-width: 500px;
+    }
+
+    .spaceBtn {
+        width: 400px;
+        height: 45px;
+        margin-top: 13px;
+    }
+
+    .blueBorderButtonContainer {
+        margin-top: 13px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .keyboardContainer {
+        padding: 18px 23px;
+    }
+
+    .textInputContainer {
+        margin-bottom: 20px;
+    }
+
+    .blueBorderButton {
+        height: 40px;
+    }
+
+    .bottomButtonsContainer {
+        max-width: 500px;
+    }
+
+    .spaceBtn {
+        width: 400px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .blueBorderButtonContainer {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 639px) {
+    .keyboardContainer {
+        padding: 16px 20px;
+    }
+
+    .textInputContainer {
+        min-width: 350px;
+        height: 40px;
+        margin-bottom: 18px;
+    }
+
+    .blueBorderButton {
+        height: 35px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .bottomButtonsContainer {
+        max-width: 350px;
+    }
+
+    .spaceBtn {
+        width: 400px;
+        height: 38px;
+        margin-top: 10px;
+    }
+
+    .blueBorderButtonContainer {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 429px) {
+    .keyboardContainer {
+        padding: 14px 16px;
+    }
+
+    .textInputContainer {
+        min-width: 280px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .blueBorderButton {
+        height: 33px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .bottomButtonsContainer {
+        max-width: 300px;
+    }
+
+    .spaceBtn {
+        width: 250px;
+        height: 33px;
+        margin-top: 8px;
+    }
+
+    .blueBorderButtonContainer {
+        margin-top: 8px;
+    }
 }
